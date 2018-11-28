@@ -6,19 +6,155 @@
       "fields": [
         {
           "id": "dominioFuncional",
-          "label": "Dominio Funcional"
-        },
-        {
-          "id": "nome",
-          "label": "Nome",
+          "label": "Subdominio Funcional",
           "options": [
             {
               "value": "",
               "label": "Selecione..."
             },
             {
-              "value": "Teste",
-              "label": "Teste de Nome"
+              "value": "MERCADO_DE_CAPITAIS",
+              "label": "Mercado de Capitais"
+            }
+          ]
+        },
+        {
+          "id": "comunidade",
+          "label": "Comunidade",
+          "options": [
+            {
+              "value": "",
+              "label": "Selecione..."
+            },
+            {
+              "value": "contas",
+              "label": "Contas e Tarifas"
+            },
+            {
+              "value": "fundos",
+              "label": "Fundos e Previdência"
+            }
+          ]
+        }
+      ]
+    },
+    "vip": {
+      "id": "vip",
+      "label": "Virtual IP",
+      "fields": [
+        {
+          "id": "tipo",
+          "label": "Tipo",
+          "options": [
+            {
+              "value": "",
+              "label": "Selecione..."
+            },
+            {
+              "value": "LTM",
+              "label": "Local Traffic Manager"
+            },
+            {
+              "value": "GTM",
+              "label": "Global Traffic Manager"
+            }
+          ]
+        },
+        {
+          "id": "metodo",
+          "label": "Método",
+          "options": [
+            {
+              "value": "",
+              "label": "Selecione..."
+            },
+            {
+              "value": "round-robin",
+              "label": "Round Robin"
+            },
+            {
+              "value": "static-persist",
+              "label": "Static Persist"
+            },
+            {
+              "value": "global-availability",
+              "label": "Global Availability"
+            },
+            {
+              "value": "drop-packet",
+              "label": "Drop Packet"
+            },
+            {
+              "value": "qos",
+              "label": "Quality of Service"
+            },
+            {
+              "value": "round-trip-time",
+              "label": "Round Trip Time"
+            },
+            {
+              "value": "completion-rate",
+              "label": "Completion Rate"
+            }
+          ]
+        },
+        {
+          "id": "port",
+          "label": "Porta"
+        },
+        {
+          "id": "dns",
+          "label": "DNS"
+        },
+        {
+          "id": "health-path",
+          "label": "Health Check"
+        }
+      ]
+    },
+    "application": {
+      "id": "application",
+      "label": "Aplicação",
+      "fields": [
+        {
+          "id": "nome",
+          "label": "Nome"
+        },
+        {
+          "id": "sigla",
+          "label": "Sigla"
+        },
+        {
+          "id": "linguagem",
+          "label": "Linguagem",
+          "options": [
+            {
+              "value": "",
+              "label": "Selecione..."
+            },
+            {
+              "value": "java8",
+              "label": "Java 8"
+            },
+            {
+              "value": "java10",
+              "label": "Java 10"
+            },
+            {
+              "value": "java7",
+              "label": "Java 7 (Obsoleto)"
+            },
+            {
+              "value": "dotnet4",
+              "label": ".NET 4.x"
+            },
+            {
+              "value": "dotnetcore2",
+              "label": ".net core 2.x"
+            },
+            {
+              "value": "dotnetcore3",
+              "label": ".net core 3.x"
             }
           ]
         }
@@ -53,6 +189,32 @@
             {
               "value": "windows_2016",
               "label": "Windows Server 2016"
+            }
+          ]
+        },
+        {
+          "id": "runtime",
+          "label": "Runtime",
+          "options": [
+            {
+              "value": "systemd",
+              "label": "Systemd"
+            },
+            {
+              "value": "windowsService",
+              "label": "Windows Service"
+            },
+            {
+              "value": "jboss",
+              "label": "JBOSS AS 7"
+            },
+            {
+              "value": "iis",
+              "label": "IIS"
+            },
+            {
+              "value": "pm2",
+              "label": "PM2"
             }
           ]
         }
