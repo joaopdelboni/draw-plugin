@@ -1,0 +1,106 @@
+{
+  "elements": {
+    "securityGroup": {
+      "id": "securityGroup",
+      "label": "Security Group",
+      "fields": [
+        {
+          "id": "dominioFuncional",
+          "label": "Dominio Funcional"
+        },
+        {
+          "id": "nome",
+          "label": "Nome",
+          "options": [
+            {
+              "value": "",
+              "label": "Selecione..."
+            },
+            {
+              "value": "Teste",
+              "label": "Teste de Nome"
+            }
+          ]
+        }
+      ]
+    },
+    "server": {
+      "id": "server",
+      "label": "Servidor",
+      "fields": [
+        {
+          "id": "flavor",
+          "label": "Flavor",
+          "options": [
+            {
+              "value": "m1.large",
+              "label": "M1 Large"
+            },
+            {
+              "value": "m1.xlarge",
+              "label": "M1 XLarge"
+            }
+          ]
+        },
+        {
+          "id": "so",
+          "label": "Sistema Operacional",
+          "options": [
+            {
+              "value": "redhat.7.3",
+              "label": "RedHat Enterprise Linux 7.3"
+            },
+            {
+              "value": "windows_2016",
+              "label": "Windows Server 2016"
+            }
+          ]
+        }
+      ]
+    },
+    "firewallRule": {
+      "id": "firewallRule",
+      "label": "Regra de Firewall",
+      "fields": [
+        {
+          "id": "tipo",
+          "label": "Tipo",
+          "options": [
+            {
+              "value": "tcp",
+              "label": "TCP"
+            },
+            {
+              "value": "udp",
+              "label": "UDP"
+            }
+          ]
+        },
+        {
+          "id": "sentido",
+          "label": "Sentido",
+          "options": [
+            {
+              "value": "out",
+              "label": "Saída"
+            },
+            {
+              "value": "in",
+              "label": "Entrada"
+            }
+          ]
+        },
+        {
+          "id": "initialPort",
+          "label": "Porta Inicial"
+        },
+        {
+          "id": "finalPort",
+          "label": "Porta Final"
+        }
+      ]
+    }
+  }
+
+
+}
